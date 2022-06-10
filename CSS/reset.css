@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
@@ -9,33 +11,41 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 100vw;
+     
 }
 
 .top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    position: relative;
+    top: 100px;
+    height: 100%;
+    margin: auto;
+}
+
+.img{
+    background-color: black;
 }
 
 .bg-white{
     background: url("../illustration-hero.svg");
     background-repeat: no-repeat;
     background-color: white;
+    width: 450px;
     display: flex;
     flex-direction: column;
+    margin-top: -5px;
     border-radius: 20px;
 }
 
 #order h1{
     font-weight: 900;
-    width: 80%;
+    margin-top: 250px;
+    margin-bottom: 20px;
 }
 
 #order p{
     font-weight: 500;
-    width: 80%;
+    margin-bottom: 20px;
+    width: 300px;
 }
 
 .meio{
@@ -43,8 +53,10 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color:hsl(224, 23%, 98%);
-    padding: 10px;
-    width: 90%;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
 }
 
@@ -58,20 +70,16 @@ body{
 
 .pagar{
     background-color: hsl(245, 75%, 52%);
+    width: 350px;
+    margin: auto;
     border-radius: 10px;
     padding: 10px;
     color: white;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-    width: 90%;
 }
 
 .cancel{
+    margin-bottom: 50px;
     font-size: 15px;
-    width: 90%;
 }
 
-@media (max-width: 650px){
-    .top{
-        width: 80%;
-    }
-}
